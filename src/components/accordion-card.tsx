@@ -1,0 +1,40 @@
+import { ArrowRight } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+type AcordionCardProps = {
+  title: string;
+  src: string;
+  href?: string;
+};
+
+const AccordionCard = ({ title, src, href }: AcordionCardProps) => {
+  return (
+    <>
+      <div className="w-full h-full bg-white rounded-lg flex flex-col gap-3 py-12">
+        <div className="w-full h-full relative">
+          <Image
+            src={`/assets/images/${src}`}
+            className="z-0 object-contain object-center"
+            fill
+            sizes="100%"
+            alt="acordion-card-image-03"
+          />
+        </div>
+        <div className="flex flex-col px-12 gap-3">
+          <p className="text-3xl/snug font-medium text-slate-800 line-clamp-2">{title}</p>
+          <Link
+            href={href ?? "/"}
+            className="flex flex-row items-center gap-3 text-lg font-medium text-dodger-blue-500"
+          >
+            <span>Learn More</span>
+            <ArrowRight size={20} />
+          </Link>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default AccordionCard;

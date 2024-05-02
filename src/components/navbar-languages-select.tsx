@@ -38,7 +38,7 @@ const NavbarLanguagesSelect = () => {
             <SelectItem value="sgp">Singapore</SelectItem>
           </SelectGroup>
         </SelectContent>
-      </Select>{" "}
+      </Select>
     </>
   );
 };

@@ -1,0 +1,3 @@
+#carousel-content:not(.is-snapped) {
+  opacity: 0.5;
+}
