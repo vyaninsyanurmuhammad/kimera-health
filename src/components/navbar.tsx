@@ -35,7 +35,7 @@ const Navbar = () => {
           <NavbarLanguagesSelect />
         </div>
         <div className="flex flex-row gap-12">
-          <div className="flex flex-row items-center capitalize gap-8">
+          <div className="flex flex-row items-center font-semibold text-slate-800 capitalize gap-8">
             <p className="text-dodger-blue-500">home</p>
             <p>about us</p>
             <p>our partner</p>
