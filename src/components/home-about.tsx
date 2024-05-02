@@ -36,7 +36,7 @@ const HomeAbout = () => {
           <div className="absolute bg-dodger-blue-500 -z-10 -inset-20 rounded-xl"></div>
           <TagSection className="text-white/50" text="about us" />
           <div className="w-full flex flex-row gap-12">
-            <div className="w-[580px] flex flex-col gap-16">
+            <div className="w-[30%] shrink-0 flex flex-col gap-16">
               <p className="text-5xl/snug font-medium text-white">
                 We are comitted to ensuring relieble supply and backed by
                 unwavering quality support
@@ -65,7 +65,7 @@ const HomeAbout = () => {
                 </div>
               </div>
             </div>
-            <div className="w-fit flex flex-row gap-4">
+            <div className="w-[70%] flex flex-row gap-4">
               {videos.map((video, index) => {
                 const { src, caption } = video;
 

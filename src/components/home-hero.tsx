@@ -6,8 +6,8 @@ import Image from "next/image";
 const HomeHero = () => {
   return (
     <>
-      <div className="w-full h-fit flex flex-row shrink-0 pb-28">
-        <div className="w-1/2 h-fit shrink-0 flex flex-col justify-center gap-6 px-28 py-40">
+      <div className="w-full h-fit flex flex-row shrink-0 pb-28 gap-12">
+        <div className="w-full xl:w-[60%] 2xL:w-1/2 h-fit shrink-0 flex flex-col justify-center gap-6 xl:pl-28 py-40">
           <TagSection className="text-emerald-600" text="committed to ensure" />
 
           <div className="w-full h-fit flex flex-col gap-3">
@@ -51,9 +51,9 @@ const HomeHero = () => {
             </div>
           </div>
         </div>
-        <div className="w-1/2 relative">
+        <div className="hidden xl:block xl:w-[40%] 2xL:w-1/2 relative pr-28 py-28">
           <Image
-            className="object-cover z-0 relative"
+            className="object-cover z-0 h-full w-full !relative rounded-xl"
             src={"/assets/images/medical-hospital.jpg"}
             fill
             sizes="100%"

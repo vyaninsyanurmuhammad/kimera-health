@@ -34,7 +34,7 @@ const HeroCard = ({ icon, text, orientation, href }: HeroCardProps) => {
         </div>
 
         <div className="h-full w-full flex flex-col justify-center">
-          <p className="text-xl font-medium text-slate-800">
+          <p className="text-xl font-medium text-slate-800 break-words">
             {text ?? "Lorem Ipsum"}
           </p>
           {orientation === "horizontal" && (

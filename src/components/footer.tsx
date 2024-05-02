@@ -9,7 +9,7 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="px-28 pt-[640px] pb-12 h-fit w-full flex flex-col gap-12">
+      <div className="px-28 pt-28 pb-12 h-fit w-full flex flex-col gap-12">
         <div className="w-full h-fit flex flex-row justify-between items-center">
           <p className="text-lg font-semibold">Kimera Health</p>
           <NavbarLanguagesSelect />

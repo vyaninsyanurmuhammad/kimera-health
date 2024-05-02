@@ -36,7 +36,7 @@ const VideoCard = ({ src, caption, autoplay }: VideoCardProps) => {
     <>
       <div
         className={`rounded-lg flex flex-col gap-2.5 ${
-          autoplay ? "w-full" : "w-96 h-3/5"
+          autoplay ? "w-[50%]" : "w-[25%] h-3/5"
         } transition-all ease-in-out duration-700`}
       >
         <div className="w-full h-3 rounded-full bg-dodger-blue-50 shrink-0 overflow-hidden">

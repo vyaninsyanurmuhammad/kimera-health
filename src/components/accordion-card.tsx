@@ -22,8 +22,8 @@ const AccordionCard = ({ title, src, href }: AcordionCardProps) => {
             alt="acordion-card-image-03"
           />
         </div>
-        <div className="flex flex-col px-12 gap-3">
-          <p className="text-3xl/snug font-medium text-slate-800 line-clamp-2">{title}</p>
+        <div className="flex flex-col xl:px-6 2xl:px-12 gap-3">
+          <p className="text-xl xl:text-2xl 2xl:text-3xl/snug break-words font-medium text-slate-800">{title}</p>
           <Link
             href={href ?? "/"}
             className="flex flex-row items-center gap-3 text-lg font-medium text-dodger-blue-500"

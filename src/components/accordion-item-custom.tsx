@@ -43,7 +43,7 @@ const AccordionItemCustom = ({
         </div>
       </AccordionTrigger>
       <AccordionContent className="w-full h-fit px-20 flex flex-row gap-12 items-center">
-        <div className="w-[720px] h-fit flex flex-col gap-6">
+        <div className="w-[35%] h-fit flex flex-col gap-6">
           <div className="h-2 w-16 rounded-full bg-emerald-600"></div>
 
           <div className="w-full h-fit flex flex-col gap-3">
@@ -57,7 +57,7 @@ const AccordionItemCustom = ({
             <p className="text-xl font-medium">Learn More</p>
           </Button>
         </div>
-        <div className="w-full h-[520px] flex flex-row gap-4">
+        <div className="w-[75%] h-[520px] grid grid-cols-3 gap-4">
           <AccordionCard src="waveform-1.png" title="Radiotrequency Ablation" />
           <AccordionCard src="spinal-1.png" title="Spinal Card Stimulator" />
           <AccordionCard
