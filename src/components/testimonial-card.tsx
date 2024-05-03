@@ -5,8 +5,8 @@ import Image from "next/image";
 const TestimonialCard = () => {
   return (
     <>
-      <div className="w-[720px] flex flex-col gap-12 mr-28">
-        <div className="w-full flex flex-row justify-between items-center">
+      <div className="w-[80%] xl:w-[720px] flex flex-col gap-12">
+        <div className="w-full flex flex-col-reverse xl:flex-row justify-between items-end xl:items-center gap-6 xl:gap-3">
           <div className="w-full flex flex-row gap-6 items-center">
             <Avatar className="h-14 w-14">
               <AvatarImage
@@ -35,12 +35,12 @@ const TestimonialCard = () => {
         <div className="w-full flex flex-col gap-6">
           <div className="flex flex-col gap-2">
             <p className="text-5xl/snug text-white text-start">10+ Years</p>
-            <span className="font-semibold text-lg text-emerald-600">
+            <span className="font-semibold text-base xl:text-lg text-emerald-600">
               Partnership
             </span>
           </div>
 
-          <p className="text-2xl/snug font-normal text-white/50">
+          <p className="text-lg/snug xl:text-2xl/snug font-normal text-white/50">
             The reliability and effectiveness of Kimera&apos;s solutions have
             consistently exceeded our expectations, allowing us to provide
             cutting-edge treatments to our patients. Not only does Kimera

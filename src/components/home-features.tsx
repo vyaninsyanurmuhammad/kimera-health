@@ -33,10 +33,10 @@ const HomeFeatures = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col gap-12 items-center py-28">
-        <div className="w-[1080px] flex flex-col px-28 gap-6 items-center">
+      <div className="w-full flex flex-col gap-12 items-center py-12 xl:py-28">
+        <div className="w-full xl:w-[1080px] flex flex-col p-12 xl:px-28 gap-6 items-center">
           <TagSection className="text-emerald-600" text="featured products" />
-          <p className="text-5xl/snug font-semibold text-800 text-center">
+          <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-800 text-center">
             Your Trusted Source for Advanced Pain Management Solutions
           </p>
         </div>

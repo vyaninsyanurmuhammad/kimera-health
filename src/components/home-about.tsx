@@ -31,13 +31,13 @@ const HomeAbout = () => {
 
   return (
     <>
-      <div className="w-full p-28 my-28 flex flex-row">
+      <div className="w-full p-12 xl:p-28 my-12 xl:my-28 flex flex-row">
         <div className="w-full flex flex-col gap-6 relative">
-          <div className="absolute bg-dodger-blue-500 -z-10 -inset-20 rounded-xl"></div>
+          <div className="absolute bg-dodger-blue-500 -z-10 -inset-8 xl:-inset-20 rounded-xl"></div>
           <TagSection className="text-white/50" text="about us" />
-          <div className="w-full flex flex-row gap-12">
-            <div className="w-[30%] shrink-0 flex flex-col gap-16">
-              <p className="text-5xl/snug font-medium text-white">
+          <div className="w-full flex flex-col xl:flex-row gap-12">
+            <div className="w-full xl:w-[30%] shrink-0 flex flex-col gap-16">
+              <p className="text-4xl/snug xl:text-5xl/snug font-medium text-white">
                 We are comitted to ensuring relieble supply and backed by
                 unwavering quality support
               </p>
@@ -65,7 +65,7 @@ const HomeAbout = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[70%] flex flex-row gap-4">
+            <div className="w-full xl:w-[70%] flex flex-row gap-4">
               {videos.map((video, index) => {
                 const { src, caption } = video;
 

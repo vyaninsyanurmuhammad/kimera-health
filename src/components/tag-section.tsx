@@ -9,7 +9,7 @@ type TagSectionProps = {
 const TagSection = ({ className, text }: TagSectionProps) => {
   return (
     <>
-      <div className={`flex flex-row gap-2.5 ${className}`}>
+      <div className={`flex flex-row gap-3 ${className} items-center text-sm xl:text-base`}>
         <Minus />
         <span className="font-bold uppercase">{text ?? "lorem ipsum"}</span>
       </div>

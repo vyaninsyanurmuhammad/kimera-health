@@ -40,9 +40,9 @@ const HeroCard = ({ icon, text, orientation, href }: HeroCardProps) => {
           {orientation === "horizontal" && (
             <Link
               href={href ?? "/"}
-              className="flex flex-row items-center gap-3 text-lg font-medium text-dodger-blue-500"
+              className="flex flex-row items-center gap-3 text-lg font-medium text-dodger-blue-500 hover:text-dodger-blue-800/50"
             >
-              <span>Check Now</span>
+              Check Now
             </Link>
           )}
         </div>

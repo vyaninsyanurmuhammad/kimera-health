@@ -15,21 +15,19 @@ import Image from "next/image";
 const HomeTestimonialCarousel = () => {
   return (
     <>
-      <div className="w-full pl-28">
+      <div className="w-full pl-8 xl:pl-28">
         <Carousel
-          className="w-full flex flex-col gap-24"
+          className="w-full flex flex-col gap-12 xl:gap-24"
           plugins={[ClassNames()]}
+          opts={{ align: "center" }}
         >
-          <CarouselContent className="">
-            <CarouselItem className="">
-              <TestimonialCard />
-            </CarouselItem>
-            <CarouselItem className="">
-              <TestimonialCard />
-            </CarouselItem>
-            <CarouselItem className="">
-              <TestimonialCard />
-            </CarouselItem>
+          <CarouselContent
+            className="ml-[calc(48px*-1)]"
+            style={{ backfaceVisibility: "hidden" }}
+          >
+            <HomeTestimonialCarouselItem />
+            <HomeTestimonialCarouselItem />
+            <HomeTestimonialCarouselItem />
           </CarouselContent>
           <div className="bottom-4 right-4 flex gap-2 transition-all">
             <CarouselPrevious className="relative w-12 h-12 left-0 top-auto bottom-0 translate-x-0 translate-y-0" />
@@ -37,19 +35,19 @@ const HomeTestimonialCarousel = () => {
           </div>
         </Carousel>
       </div>
-      <div className="w-full flex flex-row justify-between items-center px-20 gap-12">
-        <div className="rounded-lg h-[520px] w-1/3 p-2 bg-white relative overflow-hidden mb-64">
+      <div className="w-full flex flex-col xl:flex-row justify-between items-center px-8 xl:px-20 gap-6 xl:gap-12">
+        <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden xl:mb-64">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
               src={`/assets/images/health-care.jpg`}
-              className="object-cover h-full w-fit"
+              className="object-cover h-full w-full xl:w-fit"
               fill
               sizes="100%"
               alt="avatar-partner-1"
             />
           </div>
         </div>
-        <div className="rounded-lg h-[860px] w-1/3 p-2 bg-white relative overflow-hidden">
+        <div className="rounded-lg h-80 xl:h-[860px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
               src={`/assets/images/microscoping-lab.jpg`}
@@ -60,7 +58,7 @@ const HomeTestimonialCarousel = () => {
             />
           </div>
         </div>
-        <div className="rounded-lg h-[520px] w-1/3 p-2 bg-white relative overflow-hidden mt-64">
+        <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden  xl:mt-64">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
               src={`/assets/images/nurse-measuring.jpg`}
@@ -72,6 +70,16 @@ const HomeTestimonialCarousel = () => {
           </div>
         </div>
       </div>
+    </>
+  );
+};
+
+const HomeTestimonialCarouselItem = () => {
+  return (
+    <>
+      <CarouselItem id="carousel-content" className="pl-12 flex-none w-[80%] ">
+        <TestimonialCard />
+      </CarouselItem>
     </>
   );
 };

@@ -54,17 +54,17 @@ const HomeTestimonial = () => {
 
   return (
     <>
-      <div className="w-full py-28 bg-dodger-blue-950 rounded-tr-[112px] flex flex-col gap-24">
-        <div className="w-full flex flex-col pl-28 gap-12">
-          <div className="w-[820px] flex flex-col gap-6 items-start">
+      <div className="w-full py-28 bg-dodger-blue-950 rounded-tr-[84px] xl:rounded-tr-[112px] flex flex-col gap-24">
+        <div className="w-full flex flex-col px-8 xl:px-0 xl:pl-28 gap-12">
+          <div className="w-full xl:w-[820px] flex flex-col gap-6 items-start">
             <TagSection className="text-emerald-600" text="featured products" />
-            <p className="text-5xl/snug font-semibold text-white text-start">
+            <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-white text-start">
               Discover the Stories, Insights, & Impact of Our Valued Customers
             </p>
           </div>
-          <div className="flex flex-row items-center gap-12">
+          <div className="flex flex-col xl:flex-row justify-start xl:items-center gap-12">
             <div className="flex flex-col items-start gap-3">
-              <span className="text-[148px] tracking-tighter bg-gradient-to-tr from-emerald-400 via-70% to-blue-700 bg-clip-text text-transparent">
+              <span className="text-[148px] leading-snug tracking-tighter bg-gradient-to-tr from-emerald-400 via-70% to-blue-700 bg-clip-text text-transparent">
                 30+
               </span>
               <p className="text-xl/none font-medium text-white/30">
@@ -73,6 +73,7 @@ const HomeTestimonial = () => {
             </div>
             <div className="flex flex-col gap-6 w-full h-fit overflow-hidden justify-center relative">
               <div className="left-0 w-48 absolute z-10 h-full bg-gradient-to-r from-dodger-blue-950 via-70% to-transparent"></div>
+              <div className="block xl:hidden -right-1 w-48 absolute z-10 h-full bg-gradient-to-l from-dodger-blue-950 via-70% to-transparent"></div>
               <Marquee className="w-full">
                 {firstPartners.map((data, index) => {
                   const { src } = data;
@@ -102,7 +103,7 @@ const HomeTestimonial = () => {
             </div>
           </div>
         </div>
-        <div className="w-full px-28">
+        <div className="w-full px-8 xl:px-28">
           <Separator orientation="horizontal" className="bg-white/30" />
         </div>
         <HomeTestimonialCarousel />
