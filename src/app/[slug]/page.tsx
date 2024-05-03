@@ -1,5 +1,7 @@
 import React from "react";
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
   return [
     { slug: "about" },
@@ -14,7 +16,9 @@ const DynamicPage = ({ params }: { params: { slug: string } }) => {
 
   return (
     <>
-      <div>{slug}</div>
+      <div className="w-full h-screen flex justify-center items-center">
+        {slug}
+      </div>
     </>
   );
 };

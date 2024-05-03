@@ -81,11 +81,11 @@ const Footer = () => {
               <div className="w-full xl:w-fit flex flex-col items-start gap-6">
                 <div className="h-2 w-16 rounded-full bg-dodger-blue-500"></div>
                 <div className="w-full flex flex-col gap-3 xl:gap-8">
-                  <NavigationLink>Home</NavigationLink>
-                  <NavigationLink>About Us</NavigationLink>
-                  <NavigationLink>Our Partners</NavigationLink>
-                  <NavigationLink>Blog</NavigationLink>
-                  <NavigationLink>Contact</NavigationLink>
+                  <NavigationLink href="/">Home</NavigationLink>
+                  <NavigationLink href="/about">About Us</NavigationLink>
+                  <NavigationLink href="/partners">Our Partners</NavigationLink>
+                  <NavigationLink href="blog">Blog</NavigationLink>
+                  <NavigationLink href="contact">Contact</NavigationLink>
                 </div>
               </div>
             </div>
@@ -146,10 +146,17 @@ const Footer = () => {
   );
 };
 
-const NavigationLink = ({ children }: { children: ReactNode }) => {
+const NavigationLink = ({
+  children,
+  href,
+}: {
+  children: ReactNode;
+  href: string;
+}) => {
   return (
     <Link
-      href={"/"}
+      href={href}
+      shallow
       className="text-nowrap flex flex-row items-center text-xl xl:text-3xl font-medium text-slate-800 hover:text-slate-800/90"
     >
       {children}

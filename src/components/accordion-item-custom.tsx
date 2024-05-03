@@ -81,7 +81,7 @@ const AccordionItemCustom = ({
               />
             </CarouselItem>
           </CarouselContent>
-          <CarouselDots className="-bottom-4" />
+          <CarouselDots className="!-bottom-4" />
         </Carousel>
         <div className="w-full xl:w-[75%] h-fit xl:h-[520px] hidden xl:grid grid-rows-3 xl:grid-rows-1 grid-cols-1 xl:grid-cols-3 gap-4">
           <AccordionCard src="waveform-1.png" title="Radiotrequency Ablation" />
