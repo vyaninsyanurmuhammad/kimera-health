@@ -17,6 +17,7 @@ import {
 } from "@/components/ui/sheet";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Navbar = () => {
   const router = usePathname();
@@ -56,13 +57,19 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-row gap-8 items-center">
-          <p className="text-lg font-semibold">Kimera Health</p>
+          <Image
+            src={`/assets/images/image 1.png`}
+            className="z-0 object-contain object-center w-fit h-14 !relative"
+            fill
+            sizes="100%"
+            alt="navbar-image-01"
+          />
           <div className="hidden xl:block">
             <NavbarLanguagesSelect />
           </div>
         </div>
         <div className="hidden xl:flex flex-row gap-12">
-          <div className="flex flex-row items-center gap-8">
+          <div className="flex flex-row items-center gap-6">
             {navigations.map((data, index) => {
               const { text, href } = data;
 
@@ -77,7 +84,7 @@ const Navbar = () => {
               );
             })}
           </div>
-          <Button className="rounded-full px-8 py-6 bg-dodger-blue-500 hover:bg-dodger-blue-500/90">
+          <Button className="rounded-full px-6 h-12 bg-dodger-blue-500 text-base font-semibold hover:bg-dodger-blue-500/90">
             <span>Request a demo</span>
           </Button>
         </div>
@@ -130,18 +137,27 @@ const NavigationLink = ({
   onClick?: MouseEventHandler<HTMLAnchorElement> | undefined;
 }) => {
   return (
-    <Link
-      href={href}
-      shallow
-      onClick={onClick}
-      className={`w-fit text-nowrap flex flex-row items-center font-medium capitalize ${
-        isActive
-          ? "text-dodger-blue-500 hover:text-dodger-blue-500/90"
-          : "text-slate-800 hover:text-slate-800/90"
-      }`}
-    >
-      {children}
-    </Link>
+    <>
+      <div className="flex flex-row gap-2">
+        <div className="w-2 h-auto flex items-center">
+          {isActive && (
+            <div className="w-2 h-1 rounded-full bg-dodger-blue-500"></div>
+          )}
+        </div>
+        <Link
+          href={href}
+          shallow
+          onClick={onClick}
+          className={`w-fit text-nowrap flex flex-row items-center font-bold capitalize ${
+            isActive
+              ? "text-dodger-blue-500 hover:text-dodger-blue-500/90"
+              : "text-slate-700 hover:text-slate-700/90"
+          }`}
+        >
+          {children}
+        </Link>
+      </div>
+    </>
   );
 };
 

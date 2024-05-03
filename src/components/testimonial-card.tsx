@@ -5,7 +5,7 @@ import Image from "next/image";
 const TestimonialCard = () => {
   return (
     <>
-      <div className="w-[80%] xl:w-[720px] flex flex-col gap-12">
+      <div className="w-full xl:w-full flex flex-col gap-12 pr-12 xl:pr-28">
         <div className="w-full flex flex-col-reverse xl:flex-row justify-between items-end xl:items-center gap-6 xl:gap-3">
           <div className="w-full flex flex-row gap-6 items-center">
             <Avatar className="h-14 w-14">

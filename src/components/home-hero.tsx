@@ -6,12 +6,9 @@ import Image from "next/image";
 const HomeHero = () => {
   return (
     <>
-      <div className="w-full h-fit flex flex-col-reverse xl:flex-row pb-12 xl:pb-28 gap-12">
-        <div className="w-full xl:w-[60%] 2xl:w-1/2 h-fit shrink-0 flex flex-col justify-center gap-6 px-12 xl:pl-28 pb-12 xl:py-40">
-          <TagSection
-            className="text-sm xl:text-base text-emerald-600"
-            text="committed to ensure"
-          />
+      <div className="w-full h-fit flex flex-col-reverse xl:flex-row gap-12">
+        <div className="w-full xl:w-[50%] 2xl:w-1/2 h-fit shrink-0 flex flex-col justify-center gap-6 px-12 xl:pl-28 pb-[104px] xl:pt-40">
+          <TagSection text="committed to ensure" color="emerald" />
 
           <div className="w-full h-fit flex flex-col gap-3">
             <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-800">
@@ -23,7 +20,7 @@ const HomeHero = () => {
             </p>
           </div>
           <div className="w-full h-fit xl:h-56 grid grid-rows-4 xl:grid-rows-1 xl:grid-cols-4 gap-4">
-            <HeroCard icon="brain" text="Brain Stimulation" />
+            <HeroCard icon="brain" text="Brain Simulation" />
             <HeroCard icon="bone" text="Chronic Pain Reliefer" />
             <HeroCard icon="monitor" text="Technical Trainings" />
             <HeroCard icon="heart-handshake" text="Quality Support" />
@@ -33,35 +30,47 @@ const HomeHero = () => {
               Our products are certified by
             </p>
             <div className="w-fit h-fit flex flex-row gap-3">
-              <div className="w-14 h-14 relative">
-                <Image
-                  className="object-cover"
-                  src={"/assets/images/iso-01.png"}
-                  fill
-                  sizes="100%"
-                  alt="iso-01"
-                />
-              </div>
-              <div className="w-14 h-14 relative">
-                <Image
-                  className="object-cover"
-                  src={"/assets/images/iso-02.png"}
-                  fill
-                  sizes="100%"
-                  alt="iso-02"
-                />
-              </div>
+              <Image
+                className="!relative"
+                src={"/assets/images/image 12.png"}
+                height={56}
+                width={56}
+                sizes="100%"
+                alt="iso-01"
+              />
+              <Image
+                className="!relative"
+                src={"/assets/images/Frame 33.png"}
+                height={56}
+                width={56}
+                sizes="100%"
+                alt="iso-02"
+              />
             </div>
           </div>
         </div>
-        <div className="block xl:block w-full xl:w-[40%] h-96 xl:h-auto 2xl:w-1/2 relative px-12 xl:pr-28 pt-28 xl:py-28">
-          <Image
-            className="object-cover z-0 h-full w-full !relative rounded-xl"
-            src={"/assets/images/medical-hospital.jpg"}
-            fill
-            sizes="100%"
-            alt="medical-hospital"
-          />
+        <div className="w-full xl:w-[50%] h-auto xl:h-auto 2xl:w-1/2 px-12 xl:pr-28 pt-40 xl:pb-20 flex justify-center">
+          <div className="w-full xl:w-fit h-full relative">
+            <div className="hidden xl:block h-[368px] w-[217px] rounded-xl bg-dodger-blue-500 absolute -left-4 -top-2 -z-10"></div>
+            <div className="hidden xl:block h-[228px] w-fit absolute -right-8 -bottom-8">
+              <Image
+                className="z-10 h-full w-fit !relative"
+                src={"/assets/images/Frame 35.png"}
+                fill
+                sizes="100%"
+                alt="medical-hospital"
+              />
+            </div>
+            <div className="h-full w-full xl:w-fit">
+              <Image
+                className="object-contain z-0 !relative h-full w-fit"
+                src={"/assets/images/Frame 36.png"}
+                fill
+                sizes="100%"
+                alt="medical-hospital"
+              />
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -34,7 +34,7 @@ const HomeAbout = () => {
       <div className="w-full p-12 xl:p-28 my-12 xl:my-28 flex flex-row">
         <div className="w-full flex flex-col gap-6 relative">
           <div className="absolute bg-dodger-blue-500 -z-10 -inset-8 xl:-inset-20 rounded-xl"></div>
-          <TagSection className="text-white/50" text="about us" />
+          <TagSection color="white-opacity" text="about us" />
           <div className="w-full flex flex-col xl:flex-row gap-12">
             <div className="w-full xl:w-[30%] shrink-0 flex flex-col gap-16">
               <p className="text-4xl/snug xl:text-5xl/snug font-medium text-white">

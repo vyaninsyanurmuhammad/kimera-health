@@ -22,7 +22,7 @@ const HomeTestimonialCarousel = () => {
           opts={{ align: "center" }}
         >
           <CarouselContent
-            className="ml-[calc(48px*-1)]"
+            className="-ml-12 xl:ml-[calc(48px*-1)]"
             style={{ backfaceVisibility: "hidden" }}
           >
             <HomeTestimonialCarouselItem />
@@ -39,7 +39,7 @@ const HomeTestimonialCarousel = () => {
         <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden xl:mb-64">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
-              src={`/assets/images/health-care.jpg`}
+              src={`/assets/images/tom-claes-HIdUiamYIs0-unsplash 1.png`}
               className="object-cover h-full w-full xl:w-fit"
               fill
               sizes="100%"
@@ -50,7 +50,7 @@ const HomeTestimonialCarousel = () => {
         <div className="rounded-lg h-80 xl:h-[860px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
-              src={`/assets/images/microscoping-lab.jpg`}
+              src={`/assets/images/knb.png`}
               className="object-cover h-full w-fit"
               fill
               sizes="100%"
@@ -61,7 +61,7 @@ const HomeTestimonialCarousel = () => {
         <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden  xl:mt-64">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
-              src={`/assets/images/nurse-measuring.jpg`}
+              src={`/assets/images/ygft.png`}
               className="object-cover h-full w-fit"
               fill
               sizes="100%"
@@ -77,7 +77,7 @@ const HomeTestimonialCarousel = () => {
 const HomeTestimonialCarouselItem = () => {
   return (
     <>
-      <CarouselItem id="carousel-content" className="pl-12 flex-none w-[80%] ">
+      <CarouselItem id="carousel-content" className="pl-12 flex-none basis-full xl:basis-auto xl:w-[70%] ">
         <TestimonialCard />
       </CarouselItem>
     </>

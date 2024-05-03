@@ -58,7 +58,7 @@ const HomeTestimonial = () => {
       <div className="w-full pt-28 pb-[360px] bg-dodger-blue-950 rounded-tr-[84px] xl:rounded-tr-[112px] flex flex-col gap-24">
         <div className="w-full flex flex-col px-8 xl:px-0 xl:pl-28 gap-12">
           <div className="w-full xl:w-[820px] flex flex-col gap-6 items-start">
-            <TagSection className="text-emerald-600" text="featured products" />
+            <TagSection color="emerald" text="featured products" />
             <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-white text-start">
               Discover the Stories, Insights, & Impact of Our Valued Customers
             </p>

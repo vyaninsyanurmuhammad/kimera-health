@@ -10,13 +10,13 @@ const TestimonialJumbotronCarouselItem = () => {
         <div className="w-full h-[640px] xl:h-[720px] relative">
           <Image
             className="object-cover -z-10 h-full w-full"
-            src={"/assets/images/medical-hospital.jpg"}
+            src={"/assets/images/image 46.png"}
             fill
             sizes="100%"
             alt="medical-hospital"
           />
           <div className="w-full h-full flex flex-col justify-center p-4 xl:p-20 bg-gradient-to-tr from-slate-800 from-20% to-transparent">
-            <div className="w-full xl:w-[35%] h-full flex flex-col justify-end gap-6 py-12 xl:pt-0">
+            <div className="w-full xl:w-[35%] h-full flex flex-col justify-end xl:justify-center gap-6 py-12 xl:pt-0">
               <div className="h-2 w-16 rounded-full bg-emerald-600"></div>
 
               <div className="w-full h-fit flex flex-col gap-3">

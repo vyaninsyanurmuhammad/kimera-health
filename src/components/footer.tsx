@@ -11,7 +11,16 @@ const Footer = () => {
     <>
       <div className="px-8 xl:px-28 pt-[calc(360px+32px)] xl:pt-[calc(360px+112px)] pb-12 h-fit w-full flex flex-col gap-12">
         <div className="w-full h-fit flex flex-row gap-3 justify-between items-center">
-          <p className="text-lg font-semibold">Kimera Health</p>
+          <div className="w-14 h-14">
+            <Image
+              src={`/assets/images/image 1.png`}
+              className="z-0 object-contain object-center w-full h-full !relative"
+              fill
+              sizes="100%"
+              alt="navbar-image-01"
+            />
+          </div>
+
           <NavbarLanguagesSelect />
         </div>
         <div className="w-full flex flex-col xl:flex-row gap-24">
@@ -54,24 +63,22 @@ const Footer = () => {
                   Our products are certified by
                 </p>
                 <div className="w-fit h-fit flex flex-row gap-3">
-                  <div className="w-14 h-14 relative">
-                    <Image
-                      className="object-cover"
-                      src={"/assets/images/iso-01.png"}
-                      fill
-                      sizes="100%"
-                      alt="iso-01"
-                    />
-                  </div>
-                  <div className="w-14 h-14 relative">
-                    <Image
-                      className="object-cover"
-                      src={"/assets/images/iso-02.png"}
-                      fill
-                      sizes="100%"
-                      alt="iso-02"
-                    />
-                  </div>
+                  <Image
+                    className="!relative"
+                    src={"/assets/images/image 12.png"}
+                    height={56}
+                    width={56}
+                    sizes="100%"
+                    alt="iso-01"
+                  />
+                  <Image
+                    className="!relative"
+                    src={"/assets/images/Frame 33.png"}
+                    height={56}
+                    width={56}
+                    sizes="100%"
+                    alt="iso-02"
+                  />
                 </div>
               </div>
             </div>

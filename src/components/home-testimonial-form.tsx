@@ -10,7 +10,7 @@ const HomeTestimonialForm = () => {
     <>
       <div className="w-full flex flex-col items-center px-8 xl:px-28 gap-12">
         <div className="w-fit flex flex-col gap-6 items-center">
-          <TagSection className="text-emerald-600" text="featured products" />
+          <TagSection color="emerald" text="featured products" />
           <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-white text-start">
             Let&apos;s Start the Conversation
           </p>

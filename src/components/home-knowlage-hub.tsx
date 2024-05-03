@@ -29,13 +29,36 @@ const HomeKnowlageHub = () => {
       alt: "nurse-measuring",
     },
   ];
+  const knowlageHubLatestJournals = [
+    {
+      title:
+        "Empowering Patients: The Role of Digital Health in Transforming Healthcare Delivery",
+      date: "May 22, 2024",
+      src: "ygft.png",
+      alt: "ygft",
+    },
+    {
+      title:
+        "Tackling Global Health Challenges: Strategies for Sustainable Healthcare Solutions",
+      date: "May 16, 2024",
+      src: "lucas-vasques-9vnACvX2748-unsplash 1.png",
+      alt: "lucas-vasques-9vnACvX2748-unsplash 1",
+    },
+    {
+      title:
+        "From Crisis to Care: The Evolution of Healthcare Systems in a Changing World",
+      date: "May 4, 2024",
+      src: "image 19 (1).png",
+      alt: "image 19 (1)",
+    },
+  ];
 
   return (
     <>
       <div className="w-full flex flex-col gap-24 items-start px-8 py-28 xl:p-28">
         <div className="w-full flex flex-col gap-12 items-start">
           <div className="w-full xl:w-[820px] flex flex-col gap-6 items-start">
-            <TagSection className="text-emerald-600" text="featured products" />
+            <TagSection color="emerald" text="featured products" />
             <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-slate-800 text-start">
               Your Gateway to the Latest Insights, Research, & Networking
             </p>
@@ -83,9 +106,19 @@ const HomeKnowlageHub = () => {
             </Button>
           </div>
           <div className="w-full flex flex-col xl:flex-row gap-8">
-            <KnowlageHubLatestCard />
-            <KnowlageHubLatestCard />
-            <KnowlageHubLatestCard />
+            {knowlageHubLatestJournals.map((data, index) => {
+              const { title, date, src, alt } = data;
+
+              return (
+                <KnowlageHubLatestCard
+                  key={`${title}-${index}`}
+                  title={title}
+                  date={date}
+                  src={src}
+                  alt={alt}
+                />
+              );
+            })}
           </div>
         </div>
       </div>
