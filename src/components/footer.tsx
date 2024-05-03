@@ -76,7 +76,7 @@ const Footer = () => {
               </div>
             </div>
           </div>
-          <div className="w-full xl:w-1/2 flex flex-col xl:flex-row gap-12">
+          <div className="w-full xl:w-1/2 flex flex-col xl:flex-row gap-24 xl:gap-12">
             <div className="w-full xl:w-1/2 flex flex-col items-start gap-6">
               <div className="w-full xl:w-fit flex flex-col items-start gap-6">
                 <div className="h-2 w-16 rounded-full bg-dodger-blue-500"></div>
