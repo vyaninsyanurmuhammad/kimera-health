@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useRef, useState } from "react";
 import TagSection from "./tag-section";
 import Marquee from "react-fast-marquee";
 import PartnerTag from "./partner-tag";
 import { Separator } from "./ui/separator";
 import HomeTestimonialForm from "./home-testimonial-form";
 import HomeTestimonialCarousel from "./home-testimonial-carousel";
+import HomeTestimonialJumbotronCarousel from "./home-testimonial-jumbotron-carousel";
 
 const HomeTestimonial = () => {
   const firstPartners = [
@@ -54,7 +55,7 @@ const HomeTestimonial = () => {
 
   return (
     <>
-      <div className="w-full py-28 bg-dodger-blue-950 rounded-tr-[84px] xl:rounded-tr-[112px] flex flex-col gap-24">
+      <div className="w-full pt-28 pb-[360px] bg-dodger-blue-950 rounded-tr-[84px] xl:rounded-tr-[112px] flex flex-col gap-24">
         <div className="w-full flex flex-col px-8 xl:px-0 xl:pl-28 gap-12">
           <div className="w-full xl:w-[820px] flex flex-col gap-6 items-start">
             <TagSection className="text-emerald-600" text="featured products" />
@@ -108,6 +109,7 @@ const HomeTestimonial = () => {
         </div>
         <HomeTestimonialCarousel />
         <HomeTestimonialForm />
+        <HomeTestimonialJumbotronCarousel />
       </div>
     </>
   );
