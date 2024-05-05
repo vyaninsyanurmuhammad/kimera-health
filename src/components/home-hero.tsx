@@ -21,7 +21,7 @@ const HomeHero = () => {
           </div>
           <div className="w-full h-fit xl:h-56 grid grid-rows-4 xl:grid-rows-1 xl:grid-cols-4 gap-4">
             <HeroCard icon="brain" text="Brain Simulation" />
-            <HeroCard icon="bone" text="Chronic Pain Reliefer" />
+            <HeroCard icon="hand-heart" text="Chronic Pain Reliefer" />
             <HeroCard icon="monitor" text="Technical Trainings" />
             <HeroCard icon="heart-handshake" text="Quality Support" />
           </div>

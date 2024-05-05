@@ -15,7 +15,7 @@ const HeroCard = ({ icon, text, orientation, href }: HeroCardProps) => {
   return (
     <>
       <div
-        className={`w-full flex shrink-0 items-start justify-center bg-slate-50 rounded-xl p-6 ${
+        className={`w-full flex shrink-0 items-start justify-center bg-white rounded-xl p-6 ${
           orientation === "horizontal"
             ? "flex-row gap-6 h-fit "
             : orientation === "vertical"
