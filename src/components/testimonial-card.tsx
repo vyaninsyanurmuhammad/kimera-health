@@ -21,10 +21,10 @@ const TestimonialCard = () => {
             </div>
           </div>
           <div className="h-fit w-fit flex justify-center">
-            <div className="rounded-full h-fit w-fit py-3 px-6 bg-white relative">
+            <div className="rounded-full h-12 w-fit py-3 px-6 bg-white relative">
               <Image
                 src={`/assets/images/partners/image 41.png`}
-                className="!relative object-contain h-3 w-fit"
+                className="!relative object-contain h-full w-fit"
                 fill
                 sizes="100%"
                 alt="avatar-partner-1"

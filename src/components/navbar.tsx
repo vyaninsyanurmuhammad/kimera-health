@@ -57,13 +57,16 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-row gap-8 items-center">
-          <Image
-            src={`/assets/images/image 1.png`}
-            className="z-0 object-contain object-center w-fit h-14 !relative"
-            fill
-            sizes="100%"
-            alt="navbar-image-01"
-          />
+          <div className="h-10 w-full">
+            <Image
+              src={`/assets/images/image 1.png`}
+              className="z-0 object-contain object-center w-full h-full !relative"
+              fill
+              sizes="100%"
+              alt="navbar-image-01"
+            />
+          </div>
+
           <div className="hidden xl:block">
             <NavbarLanguagesSelect />
           </div>
