@@ -43,6 +43,7 @@ const HomeTestimonialCarousel = () => {
             fill
             sizes="100%"
             alt="Rectangle 374 (2)"
+            priority={false}
           />
         </div>
         <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden xl:mb-64">

@@ -39,7 +39,7 @@ const Footer = () => {
           />
         </div>
         <div className="w-full h-fit flex flex-row gap-3 justify-between items-center">
-          <div className="w-14 h-14">
+          <div className="w-14 h-14 relative">
             <Image
               src={`/assets/images/image 1.png`}
               className="z-0 object-contain object-center w-full h-full !relative"

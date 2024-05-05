@@ -61,7 +61,7 @@ const HomeHero = () => {
                 alt="medical-hospital"
               />
             </div>
-            <div className="h-full w-full xl:w-fit">
+            <div className="h-full w-full xl:w-fit relative">
               <Image
                 className="object-contain z-0 !relative h-full w-fit"
                 src={"/assets/images/Frame 36.png"}

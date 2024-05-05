@@ -57,7 +57,7 @@ const Navbar = () => {
         }`}
       >
         <div className="flex flex-row gap-8 items-center">
-          <div className="h-10 w-full">
+          <div className="h-10 w-full relative">
             <Image
               src={`/assets/images/image 1.png`}
               className="z-0 object-contain object-center w-full h-full !relative"
