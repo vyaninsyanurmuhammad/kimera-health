@@ -21,7 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased bg-dodger-blue-100",
+          "min-h-screen font-sans antialiased bg-[#E4F2FF]",
           manrope.variable
         )}
       >

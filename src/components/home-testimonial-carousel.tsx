@@ -35,7 +35,16 @@ const HomeTestimonialCarousel = () => {
           </div>
         </Carousel>
       </div>
-      <div className="w-full flex flex-col xl:flex-row justify-between items-center px-8 xl:px-20 gap-6 xl:gap-12">
+      <div className="w-full flex flex-col xl:flex-row justify-between items-center px-8 xl:px-20 gap-6 xl:gap-12 relative">
+        <div className="absolute w-[80%] h-fit -top-28 left-1/2 -translate-x-1/2 -z-0">
+          <Image
+            src={"/assets/svg/Rectangle 374 (2).svg"}
+            className="object-contain w-full h-fit !relative"
+            fill
+            sizes="100%"
+            alt="Rectangle 374 (2)"
+          />
+        </div>
         <div className="rounded-lg h-80 xl:h-[520px] w-full xl:w-1/3 p-2 bg-white relative overflow-hidden xl:mb-64">
           <div className="rounded-md h-full w-full relative overflow-hidden">
             <Image
@@ -77,7 +86,10 @@ const HomeTestimonialCarousel = () => {
 const HomeTestimonialCarouselItem = () => {
   return (
     <>
-      <CarouselItem id="carousel-content" className="pl-12 flex-none basis-full xl:basis-auto xl:w-[70%] ">
+      <CarouselItem
+        id="carousel-content"
+        className="pl-12 flex-none basis-full xl:basis-auto xl:w-[70%] "
+      >
         <TestimonialCard />
       </CarouselItem>
     </>

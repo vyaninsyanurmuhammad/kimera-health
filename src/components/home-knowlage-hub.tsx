@@ -55,9 +55,18 @@ const HomeKnowlageHub = () => {
 
   return (
     <>
-      <div className="w-full flex flex-col gap-24 items-start px-8 py-28 xl:p-28">
+      <div className="relative w-full flex flex-col gap-24 items-start px-8 xl:px-28 py-28 xl:pt-56">
+        <div className="absolute w-full xl:w-[80%] h-fit top-0 left-0 translate-x-0 xl:translate-x-64 -z-20">
+          <Image
+            src={"/assets/svg/Frame 48095490.svg"}
+            className="object-contain w-full h-fit !relative"
+            fill
+            sizes="100%"
+            alt="Frame 48095490"
+          />
+        </div>
         <div className="w-full flex flex-col gap-12 items-start">
-          <div className="w-full xl:w-[820px] flex flex-col gap-6 items-start">
+          <div className="w-full xl:w-[800px] flex flex-col gap-6 items-start">
             <TagSection color="emerald" text="featured products" />
             <p className="text-4xl/snug xl:text-5xl/snug font-semibold text-slate-800 text-start">
               Your Gateway to the Latest Insights, Research, & Networking

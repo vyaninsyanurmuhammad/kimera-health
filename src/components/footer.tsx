@@ -9,7 +9,35 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <div className="px-8 xl:px-28 pt-[calc(360px+32px)] xl:pt-[calc(360px+112px)] pb-12 h-fit w-full flex flex-col gap-12">
+      <div className="px-8 xl:px-28 pt-[calc(360px+32px)] xl:pt-[calc(360px+112px)] pb-12 h-fit w-full flex flex-col gap-12 relative overflow-hidden">
+        <div className="absolute w-full xl:w-[80%] h-[720px] xl:h-fit top-0 xl:top-auto xl:bottom-0 left-0 translate-x-0 xl:translate-x-12 -z-20">
+          <Image
+            src={"/assets/svg/Frame 48095490.svg"}
+            className="object-contain w-full h-fit !relative"
+            fill
+            sizes="100%"
+            alt="Frame 48095490"
+          />
+        </div>
+  
+        <div className="absolute w-1/2 xl:w-[30%] h-fit top-28 right-0 -z-10">
+          <Image
+            src={"/assets/svg/Rectangle 374 (3).svg"}
+            className="object-contain w-full h-fit !relative"
+            fill
+            sizes="100%"
+            alt="Rectangle 374-3"
+          />
+        </div>
+        <div className="absolute w-1/2 xl:w-[40%] h-fit bottom-0 right-0 -z-10">
+          <Image
+            src={"/assets/svg/Rectangle 373 (1).svg"}
+            className="object-contain w-full h-fit !relative"
+            fill
+            sizes="100%"
+            alt="Rectangle 373-1"
+          />
+        </div>
         <div className="w-full h-fit flex flex-row gap-3 justify-between items-center">
           <div className="w-14 h-14">
             <Image

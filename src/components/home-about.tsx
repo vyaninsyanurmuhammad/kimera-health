@@ -3,6 +3,7 @@
 import VideoCard from "@/components/video-card";
 import React, { useEffect, useState } from "react";
 import TagSection from "./tag-section";
+import Image from "next/image";
 
 const HomeAbout = () => {
   const videos = [
@@ -33,7 +34,24 @@ const HomeAbout = () => {
     <>
       <div className="w-full p-12 xl:p-28 my-12 xl:my-28 flex flex-row">
         <div className="w-full flex flex-col gap-6 relative">
-          <div className="absolute bg-dodger-blue-500 -z-10 -inset-8 xl:-inset-20 rounded-xl"></div>
+          <div className="absolute bg-dodger-blue-500 -z-10 -inset-8 xl:-inset-20 rounded-xl overflow-hidden">
+            <Image
+              className="object-cover object-top h-full w-full !relative mix-blend-soft-light"
+              src={"/assets/images/ghdfg.png"}
+              fill
+              sizes="100%"
+              alt="ghdfg"
+            />
+            <div className="absolute h-[40%] xl:h-[720px] w-fit top-0 right-0">
+              <Image
+                className="object-cover h-full w-fit !relative"
+                src={"/assets/svg/Group 1 (1).svg"}
+                fill
+                sizes="100%"
+                alt="Group-1-1"
+              />
+            </div>
+          </div>
           <TagSection color="white-opacity" text="about us" />
           <div className="w-full flex flex-col xl:flex-row gap-12">
             <div className="w-full xl:w-[30%] shrink-0 flex flex-col gap-16">
